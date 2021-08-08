@@ -30,7 +30,8 @@
             <div class="chat">
                 <p>
                     <b>{{ chat.sender.user.username }}:</b>
-                    <span>{{ chat.text }}</span>
+                    <span>{{ chat.text }}</span>.
+                    <a href='/delete/{{chat.id}}' ><button> Delete </button></a>
                 </p>
                 <p>{{ chat.log|date:'Y-m-d - h:i:s' }}</p>
             </div>
